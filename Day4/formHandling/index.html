@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #firstbox {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #000;
+        background-color: #fff;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="firstbox">
+      <form>
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          value="first Name"
+          onchange="firstNameChange(event)"
+        />
+
+        <label for="LastName">LastName</label>
+        <input type="text" name="lastName" />
+
+        <h4>Hobbies</h4>
+        <label for="hobbies">web development</label>
+        <input type="checkbox" name="hobbies" value="webD" />
+
+        <label for="hobbies">Sports</label>
+        <input type="checkbox" name="hobbies" value="webD" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
