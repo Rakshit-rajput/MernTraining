@@ -23,24 +23,20 @@
   </head>
   <body>
     <div id="firstbox">
-      <form>
+      <form id="formData" onsubmit="submitForm(event)">
         <label for="firstName">First Name</label>
-        <input
-          type="text"
-          name="firstName"
-          value="first Name"
-          onchange="firstNameChange(event)"
-        />
+        <input id="firstName" type="text" name="firstName" value="first Name" />
 
-        <label for="LastName">LastName</label>
+        <label for="LastName">Last Name</label>
         <input type="text" name="lastName" />
 
         <h4>Hobbies</h4>
-        <label for="hobbies">web development</label>
-        <input type="checkbox" name="hobbies" value="webD" />
+        <label for="hobbies">Web Development</label>
+        <input type="checkbox" name="hobbies" value="webDev" />
 
-        <label for="hobbies">Sports</label>
-        <input type="checkbox" name="hobbies" value="webD" />
+        <label for="webD">Sports</label>
+        <input type="checkbox" name="hobbies" value="sports" />
+        <button type="submit">Submit</button>
       </form>
     </div>
     <script src="script.js"></script>
